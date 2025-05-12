@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header {
@@ -35,6 +40,8 @@ header {
 .header{
     display: flex;
     padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header .img-logo{
@@ -58,6 +65,7 @@ header .img-logo #logo_hc{
     color: #E44D1F;
     font-size: 32px;
     display: block;
+    margin-right: 20px;
 }
 
 .menu-mobile{
@@ -96,10 +104,7 @@ header .img-logo #logo_hc{
 
 .menu-mobile nav ul li a{
     color: white;
-    font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     font-size: 20px;
     padding: 20px 8%;
     gap: 70px;
