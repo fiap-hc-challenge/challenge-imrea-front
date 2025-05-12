@@ -34,6 +34,7 @@ header {
 
 .header{
     display: flex;
+    padding: 10px 0;
 }
 
 header .img-logo{
@@ -57,7 +58,6 @@ header .img-logo #logo_hc{
     color: #E44D1F;
     font-size: 32px;
     display: block;
-    padding: 10px 0;
 }
 
 .menu-mobile{
@@ -73,7 +73,7 @@ header .img-logo #logo_hc{
     display: block;
 }
 .menu-mobile.abir-menu{
-    width: 70%;
+    width: 50%;
 }
 
 .menu-mobile.abir-menu ~ .overlay-menu{
