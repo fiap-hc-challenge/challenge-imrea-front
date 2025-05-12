@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.topo .box-redes-sociais{
+    display: flex;
+    background: transparent;
+    justify-content: flex-end;
+    gap: 16px;
+    padding: 10px 20px;
+}
+
+.topo .box-redes-sociais a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.topo .box-redes-sociais li{
+    list-style: none;
+}
