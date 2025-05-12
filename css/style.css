@@ -111,6 +111,23 @@ header .img-logo #logo_hc{
     color: #E44D1F;
 }
 
+.menu-mobile nav button{
+    background-color: #fff;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    border: none;
+    border-radius: 36px;
+    margin: 0 2%;
+    font-size: 16px;
+    align-items: center;
+    color: #2C2C2C;
+}
+
+.menu-mobile nav button img{
+    margin-right: 6%;
+}
+
 .overlay-menu{
     background-color: #0000009c;
     width: 100%;
