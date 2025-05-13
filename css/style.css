@@ -76,6 +76,10 @@ header .img-logo #logo_hc{
     margin-right: 20px;
 }
 
+.btn-abrir-menu .icon:focus{
+    outline: 2.5px solid #000;
+}
+
 .menu-mobile{
     background: #E44D1F;
     height: 100%;
@@ -162,7 +166,7 @@ header .img-logo #logo_hc{
 }
 
 .container-topo .text h1{
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 700;
     color: #2C2C2C;
 }
@@ -179,13 +183,13 @@ header .img-logo #logo_hc{
 }
 
 .container-topo .text p{
-    font-size: 16px;
+    font-size: 20px;
     color: #2C2C2C;
 }
 
 .container-topo .text button{
     background-color: #E44D1F;
-    padding: 8px 32px;
+    padding: 8px 48px;
     border: none;
     border-radius: 12px;
 }
@@ -193,7 +197,7 @@ header .img-logo #logo_hc{
 .container-topo .text button a{
     text-decoration: none;
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -204,4 +208,40 @@ header .img-logo #logo_hc{
 .container-topo .text button:focus{
     outline: 2.5px solid #000;
     background-color: #e44d1fd0;
+}
+
+/*--------------- grid topo -------------*/
+
+.container-topo .grid-topo{
+    display: grid;
+    grid-template-areas: 
+    "column1 column2 column3";
+    margin: 10% 5px;
+    justify-content: center;
+}
+
+.container-topo .grid-topo .column1 img{
+    width: 100%;
+}
+
+.container-topo .grid-topo .column1 .circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #FACA7D;
+}
+
+.container-topo .grid-topo .column2 img{
+    width: 200px;
+}
+
+.container-topo .grid-topo .column3 img{
+    width: 100%;
+}
+
+.container-topo .grid-topo .column3 .squad{
+    width: 80px;
+    height: 80px;
+    border-radius: 20%;
+    background-color: #E99FB9;
 }
