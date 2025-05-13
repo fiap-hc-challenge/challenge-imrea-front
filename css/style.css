@@ -162,7 +162,8 @@ header .img-logo #logo_hc{
 .container-topo{
     display: flex;
     flex-direction: column;
-    padding: 20% 4%;
+    padding: 0 4%;
+    padding-top: 20%;
 }
 
 .container-topo .text h1{
@@ -244,4 +245,42 @@ header .img-logo #logo_hc{
     height: 80px;
     border-radius: 20%;
     background-color: #E99FB9;
+}
+
+/*--------- container-teleconsulta ------------*/
+
+.container-teleconsulta{
+    margin: 0 4%;
+}
+
+.container-teleconsulta .text h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #2C2C2C;
+}
+
+.container-teleconsulta .text p{
+    font-size: 16px;
+    color: #2C2C2C;
+    margin: 4% 0;
+}
+
+.container-teleconsulta .gp-details{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 4% 0;
+}
+
+.container-teleconsulta .gp-details .details{
+    background-color: #E44D1F;
+    color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.container-teleconsulta .gp-details .details h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 4%;
 }
