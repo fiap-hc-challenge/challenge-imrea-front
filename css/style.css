@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,7 +18,7 @@ header {
 }
 
 /*--------- topo ---------------*/
-.topo{
+.topo {
     display: none;
 }
 
@@ -42,45 +42,45 @@ header {
     list-style: none;
 }*/
 
-.header{
+.header {
     display: flex;
     padding: 10px 0;
     justify-content: space-between;
     align-items: center;
-} 
- 
+}
+
 
 /*----------------- logo --------------*/
 
-header .img-logo{
+header .img-logo {
     display: flex;
     gap: 15px;
     padding: 0 20px;
 }
 
-header .img-logo #logo_imrea{
+header .img-logo #logo_imrea {
     width: 40%;
-    
+
 }
 
-header .img-logo #logo_hc{
+header .img-logo #logo_hc {
     width: 16%;
 }
 
 /*---------- menu mobile ---------------*/
 
-.btn-abrir-menu .icon{
+.btn-abrir-menu .icon {
     color: #E44D1F;
     font-size: 32px;
     display: block;
     margin-right: 20px;
 }
 
-.btn-abrir-menu .icon:focus{
+.btn-abrir-menu .icon:focus {
     outline: 2.5px solid #000;
 }
 
-.menu-mobile{
+.menu-mobile {
     background: #E44D1F;
     height: 100%;
     position: fixed;
@@ -92,29 +92,32 @@ header .img-logo #logo_hc{
     transition: .5s;
     display: block;
 }
-.menu-mobile.abir-menu{
+
+.menu-mobile.abir-menu {
     width: 50%;
 }
 
-.menu-mobile.abir-menu ~ .overlay-menu{
+.menu-mobile.abir-menu~.overlay-menu {
     display: block;
 }
-.menu-mobile .btn-fechar .icon{
+
+.menu-mobile .btn-fechar .icon {
     color: white;
     font-size: 30px;
     display: block;
 }
-.menu-mobile .btn-fechar{
+
+.menu-mobile .btn-fechar {
     padding: 20px 5%;
 }
 
-.menu-mobile nav ul{
+.menu-mobile nav ul {
     text-align: right;
     list-style-type: none;
     text-decoration: none;
 }
 
-.menu-mobile nav ul li a{
+.menu-mobile nav ul li a {
     color: white;
     font-optical-sizing: auto;
     font-size: 20px;
@@ -123,12 +126,13 @@ header .img-logo #logo_hc{
     display: block;
     text-decoration: none;
 }
-.menu-mobile nav ul li a:hover{
+
+.menu-mobile nav ul li a:hover {
     background-color: white;
     color: #E44D1F;
 }
 
-.menu-mobile nav button{
+.menu-mobile nav button {
     background-color: #fff;
     width: 100%;
     text-align: left;
@@ -141,11 +145,11 @@ header .img-logo #logo_hc{
     color: #2C2C2C;
 }
 
-.menu-mobile nav button img{
+.menu-mobile nav button img {
     margin-right: 6%;
 }
 
-.overlay-menu{
+.overlay-menu {
     background-color: #0000009c;
     width: 100%;
     height: 100%;
@@ -159,88 +163,117 @@ header .img-logo #logo_hc{
 
 /*--------------- container topo ---------------*/
 
-.container-topo{
+.container-topo {
     display: flex;
     flex-direction: column;
     padding: 0 4%;
     padding-top: 20%;
 }
 
-.container-topo .text h1{
+.container-topo .text h1 {
     font-size: 28px;
     font-weight: 700;
     color: #2C2C2C;
 }
 
-.container-topo .text{
+.container-topo .text {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.container-topo .text h1 span{
+.container-topo .text h1 span {
     color: #E44D1F;
     font-weight: 700;
 }
 
-.container-topo .text p{
+.container-topo .text p {
     font-size: 20px;
     color: #2C2C2C;
 }
 
-.container-topo .text button{
+button {
     background-color: #E44D1F;
-    padding: 8px 48px;
+    padding: 8px 64px;
     border: none;
     border-radius: 12px;
 }
 
-.container-topo .text button a{
+button a {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
     font-weight: 500;
 }
 
-.container-topo .text button:hover{
+button:hover {
     background-color: #e44d1fd0;
 }
 
-.container-topo .text button:focus{
+button:focus {
     outline: 2.5px solid #000;
     background-color: #e44d1fd0;
 }
+button.pulsante {
+    transition: all 0.3s ease-in-out;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+
+  button.pulsante {
+    animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(228, 77, 31, 0.4);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(228, 77, 31, 0.6);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(228, 77, 31, 0.4);
+    }
+}
+
 
 /*--------------- grid topo -------------*/
 
-.container-topo .grid-topo{
+.container-topo .grid-topo {
     display: grid;
-    grid-template-areas: 
-    "column1 column2 column3";
+    grid-template-areas:
+        "column1 column2 column3";
     margin: 10% 5px;
     justify-content: center;
 }
 
-.container-topo .grid-topo .column1 img{
+.container-topo .grid-topo .column1 img {
     width: 100%;
 }
 
-.container-topo .grid-topo .column1 .circle{
+.container-topo .grid-topo .column1 .circle {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     background-color: #FACA7D;
 }
 
-.container-topo .grid-topo .column2 img{
+.container-topo .grid-topo .column2 img {
     width: 200px;
 }
 
-.container-topo .grid-topo .column3 img{
+.container-topo .grid-topo .column3 img {
     width: 100%;
 }
 
-.container-topo .grid-topo .column3 .squad{
+.container-topo .grid-topo .column3 .squad {
     width: 80px;
     height: 80px;
     border-radius: 20%;
@@ -249,38 +282,59 @@ header .img-logo #logo_hc{
 
 /*--------- container-teleconsulta ------------*/
 
-.container-teleconsulta{
-    margin: 0 4%;
+.container-teleconsulta {
+    margin: 4% 4%;
 }
 
-.container-teleconsulta .text h2{
-    font-size: 20px;
+.container-teleconsulta .text h2 {
+    font-size: 24px;
     font-weight: 700;
     color: #2C2C2C;
 }
 
-.container-teleconsulta .text p{
+.container-teleconsulta .text p {
     font-size: 16px;
     color: #2C2C2C;
     margin: 4% 0;
 }
 
-.container-teleconsulta .gp-details{
+.container-teleconsulta .gp-details {
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin: 4% 0;
 }
 
-.container-teleconsulta .gp-details .details{
+.container-teleconsulta .gp-details .details {
     background-color: #E44D1F;
     color: #fff;
     border-radius: 8px;
     padding: 16px;
 }
 
-.container-teleconsulta .gp-details .details h3{
+.container-teleconsulta .gp-details .details h3 {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 4%;
+}
+
+/*----------- seção duvida ------------*/
+
+.container-duvida {
+    margin: 16% 0;
+    padding: 12% 4%;
+    text-align: center;
+    background-color: #e4dfdf;
+}
+
+.container-duvida h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2C2C2C;
+}
+
+.container-duvida p {
+    font-size: 16px;
+    color: #2C2C2C;
+    margin: 4% 0;
 }
