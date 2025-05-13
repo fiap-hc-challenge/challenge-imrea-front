@@ -1,24 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 header {
     background-color: #fff;
-    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     position: fixed;
     z-index: 999;
     width: 100%;
 }
 
 /*--------- topo ---------------*/
+.topo{
+    display: none;
+}
 
+/* 
 .topo .box-redes-sociais{
     display: flex;
     background: transparent;
@@ -31,18 +35,22 @@ header {
     text-decoration: none;
     color: #000;
     font-size: 20px;
+    overflow: hidden;
 }
 
 .topo .box-redes-sociais li{
     list-style: none;
-}
+}*/
 
 .header{
     display: flex;
     padding: 10px 0;
     justify-content: space-between;
     align-items: center;
-}
+} 
+ 
+
+/*----------------- logo --------------*/
 
 header .img-logo{
     display: flex;
@@ -142,4 +150,58 @@ header .img-logo #logo_hc{
     left: 0;
     z-index: 9999999;
     display: none;
+}
+
+
+/*--------------- container topo ---------------*/
+
+.container-topo{
+    display: flex;
+    flex-direction: column;
+    padding: 20% 4%;
+}
+
+.container-topo .text h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: #2C2C2C;
+}
+
+.container-topo .text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.container-topo .text h1 span{
+    color: #E44D1F;
+    font-weight: 700;
+}
+
+.container-topo .text p{
+    font-size: 16px;
+    color: #2C2C2C;
+}
+
+.container-topo .text button{
+    background-color: #E44D1F;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 12px;
+}
+
+.container-topo .text button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container-topo .text button:hover{
+    background-color: #e44d1fd0;
+}
+
+.container-topo .text button:focus{
+    outline: 2.5px solid #000;
+    background-color: #e44d1fd0;
 }
