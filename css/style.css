@@ -15,7 +15,7 @@ header {
     position: fixed;
     z-index: 999;
     width: 100%;
-    padding-top: 4%;
+    padding-top: 1rem;
 }
 
 /*--------- topo ---------------*/
@@ -54,21 +54,23 @@ header {
 /*----------------- logo --------------*/
 
 header .img-logo {
-    display: flex;
-    gap: 15px;
-    padding: 0 20px;
+   padding-left: 4%;
 }
 
 header .img-logo #logo_imrea {
-    width: 40%;
+    width: 50%;
 
 }
 
 header .img-logo #logo_hc {
-    width: 16%;
+    width: 20%;
 }
 
 /*---------- menu mobile ---------------*/
+
+.menu{
+    display: none;
+}
 
 .btn-abrir-menu .icon {
     color: #E44D1F;
@@ -133,23 +135,23 @@ header .img-logo #logo_hc {
     color: #E44D1F;
 }
 
-.menu-mobile nav button {
-    background-color: #fff;
-    width: 100%;
-    text-align: left;
-    padding: 10px;
-    border: none;
-    border-radius: 36px;
-    margin: 0 2%;
-    font-size: 16px;
+.header button{
+    display: flex;
     align-items: center;
+    background-color: rgba(239, 148, 121, 0.20);
+    border: none;
+    border-radius: 24px;
+    padding: 8px 8px;
+    width: 200px;
+    text-align: start;
+    font-size: 16px;
     color: #2C2C2C;
+    margin: 0 16px;
 }
 
-.menu-mobile nav button img {
-    margin-right: 6%;
+.header button img{
+    padding-right: 6%;
 }
-
 .overlay-menu {
     background-color: #0000009c;
     width: 100%;
@@ -193,29 +195,29 @@ header .img-logo #logo_hc {
     color: #2C2C2C;
 }
 
-button {
+.button-acesse button {
     background-color: #E44D1F;
     padding: 8px 64px;
     border: none;
     border-radius: 12px;
 }
 
-button a {
+.button-acesse button a {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
     font-weight: 500;
 }
 
-button:hover {
+.button-acesse button:hover {
     background-color: #e44d1fd0;
 }
 
-button:focus {
+.button-acesse button:focus {
     outline: 2.5px solid #000;
     background-color: #e44d1fd0;
 }
-button.pulsante {
+.button-acesse button.pulsante {
     transition: all 0.3s ease-in-out;
     border: none;
     outline: none;
@@ -223,7 +225,7 @@ button.pulsante {
   }
   
 
-  button.pulsante {
+.button-acesse button.pulsante {
     animation: pulse 1.2s infinite;
 }
 
@@ -515,8 +517,56 @@ footer .redes-sociais-footer a:hover{
 }
 
 @media (min-width: 992px){
+    .header{
+        justify-content: center;
+    }
     .container-topo {
         padding-top: 12%;
     }
+
+    .menu-mobile{
+        display: none;
+    }
+
+    .btn-abrir-menu{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+    }
+
+    .menu ul{
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .menu ul li{
+        list-style: none;
+    }
+
+    .menu ul li a{
+        text-decoration: none;
+        color: #E44D1F;
+        font-size: 16px;
+        padding: 16px 0;
+    }
+
+    .menu ul li a:hover{
+        text-decoration: underline;
+    }
+
+    .menu ul li a:focus{
+        border: 2.5px solid #000;
+        text-decoration: underline;
+    }
+
+    .header button{
+        margin: 0 8px;
+        width: 150px;
+    }
+
+    
 }
 
