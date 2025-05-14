@@ -15,6 +15,7 @@ header {
     position: fixed;
     z-index: 999;
     width: 100%;
+    padding-top: 4%;
 }
 
 /*--------- topo ---------------*/
@@ -283,6 +284,7 @@ button.pulsante {
 
 .container-topo .img-topo{
     margin: 8% 0;
+    text-align: center;
 }
 
 .container-topo .img-topo img{
@@ -353,6 +355,8 @@ button.pulsante {
     margin: 4% 0;
 }
 
+/*----------- sobre app ----------*/
+
 .sobre-app{
     margin: 0 4%;
     display: flex;
@@ -401,7 +405,7 @@ button.pulsante {
 footer{
     background-color: #FFE3DA;
     text-align: center;
-    padding: 12% 0;
+    padding: 12% 4%;
 }
 
 footer p{
@@ -432,7 +436,7 @@ footer .redes-sociais-footer{
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding: 4% 0;
+    padding-top: 4%;
 }
 
 footer .redes-sociais-footer li{
@@ -452,4 +456,30 @@ footer .redes-sociais-footer a:hover{
 
 
 /*----------------- media queries ---------------*/
+
+@media (min-width: 600px) {
+    .container-topo{
+        padding: 0 8%;
+        padding-top: 15%; 
+        
+    }
+
+    .container-duvida {
+        margin: 8% 0;
+        padding: 12% 8%;
+    }
+
+    .container-teleconsulta {
+        margin: 4% 8%;
+    }
+
+    .sobre-app{
+        margin: 0 8%;
+    }
+
+    footer{
+        padding: 12% 8%;
+    }
+    
+}
 
