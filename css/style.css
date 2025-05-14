@@ -246,7 +246,7 @@ button.pulsante {
 
 /*--------------- grid topo -------------*/
 
-.container-topo .grid-topo {
+/* .container-topo .grid-topo {
     display: grid;
     grid-template-areas:
         "column1 column2 column3";
@@ -266,11 +266,12 @@ button.pulsante {
 }
 
 .container-topo .grid-topo .column2 img {
-    width: 200px;
+    width: 210px;
 }
 
 .container-topo .grid-topo .column3 img {
     width: 100%;
+    max-width: 150px;
 }
 
 .container-topo .grid-topo .column3 .squad {
@@ -278,7 +279,20 @@ button.pulsante {
     height: 80px;
     border-radius: 20%;
     background-color: #E99FB9;
+} */
+
+.container-topo .img-topo{
+    margin: 8% 0;
 }
+
+.container-topo .img-topo img{
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+
+
 
 /*--------- container-teleconsulta ------------*/
 
@@ -368,7 +382,8 @@ button.pulsante {
 }
 
 .sobre-app .baixar img{
-    width: 50%;
+    width: 200px;
+    height: auto;
     padding: 2% 0;
 }
 
@@ -434,3 +449,7 @@ footer .redes-sociais-footer a:hover{
     transform: scale(1.05);
     transition: 0.3s;
 }
+
+
+/*----------------- media queries ---------------*/
+
