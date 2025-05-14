@@ -466,7 +466,7 @@ footer .redes-sociais-footer a:hover{
 
     .container-duvida {
         margin: 8% 0;
-        padding: 12% 8%;
+        padding: 8% 8%;
     }
 
     .container-teleconsulta {
@@ -478,8 +478,39 @@ footer .redes-sociais-footer a:hover{
     }
 
     footer{
-        padding: 12% 8%;
+        padding: 8% 8%;
     }
     
+}
+
+
+@media (min-width: 768px){
+    header .img-logo #logo_imrea {
+        width: 50%;
+    
+    }
+    
+    header .img-logo #logo_hc {
+        width: 20%;
+    }
+
+    .btn-abrir-menu .icon {
+        font-size: 40px;
+    }
+
+    header {
+        padding: 0 4%;
+        padding-top: 2%;
+    }
+
+    .sobre-app .text-app p {
+        margin: 4% 0;
+        max-width: 80%;
+    }
+
+    .container-teleconsulta .gp-details {
+        flex-direction: row;
+        
+    }
 }
 
