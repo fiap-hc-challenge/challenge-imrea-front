@@ -510,7 +510,13 @@ footer .redes-sociais-footer a:hover{
 
     .container-teleconsulta .gp-details {
         flex-direction: row;
-        
+
+    }
+}
+
+@media (min-width: 992px){
+    .container-topo {
+        padding-top: 12%;
     }
 }
 
