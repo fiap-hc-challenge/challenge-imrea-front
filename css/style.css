@@ -364,6 +364,7 @@ button.pulsante {
 
 .sobre-app .baixar{
     text-align: center;
+    margin-bottom: 12%;
 }
 
 .sobre-app .baixar img{
@@ -378,4 +379,58 @@ button.pulsante {
 .sobre-app .baixar:focus{
     border: 5px solid #000;
     border-radius: 16px;
+}
+
+/*-------------- footer ---------------*/
+
+footer{
+    background-color: #FFE3DA;
+    text-align: center;
+    padding: 12% 0;
+}
+
+footer p{
+    font-size: 16px;
+    color: #2C2C2C;
+    margin: 4% 0;
+}
+
+footer .menu-footer{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 4% 0;
+}
+
+footer .menu-footer li{
+    list-style: none;
+    
+}
+
+footer .menu-footer li a{
+    color: #E44D1F;
+    font-size: 16px;
+}
+
+footer .redes-sociais-footer{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 4% 0;
+}
+
+footer .redes-sociais-footer li{
+    list-style: none;
+    
+}
+
+footer .redes-sociais-footer a{
+    color: #000;
+    font-size: 24px;
+}
+
+footer .redes-sociais-footer a:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
 }
