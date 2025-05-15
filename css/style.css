@@ -57,12 +57,12 @@ header .img-logo {
    padding-left: 4%;
 }
 
-header .img-logo #logo_imrea {
+header  #logo_imrea {
     width: 50%;
 
 }
 
-header .img-logo #logo_hc {
+header  #logo_hc {
     width: 20%;
 }
 
@@ -482,7 +482,7 @@ footer .redes-sociais-footer a:hover{
 
 @media (min-width: 992px){
     .header-content{
-        justify-content: center;
+        justify-content: space-evenly;
     }
     .container-topo {
         padding-top: 12%;
