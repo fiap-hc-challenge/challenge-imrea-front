@@ -389,7 +389,7 @@ footer .menu-footer{
     justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
-    padding: 4% 0;
+    padding: 10px 0;
 }
 
 footer .menu-footer li{
@@ -474,6 +474,17 @@ footer .redes-sociais-footer a:hover{
         padding-top: 2%;
     }
 
+    .sobre-app{
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 3%;
+        justify-content: space-evenly;
+    }
+
+    .sobre-app .baixar{
+        margin-bottom: 0;
+    }
+
     .sobre-app .text-app p {
         margin: 4% 0;
         max-width: 80%;
@@ -481,6 +492,7 @@ footer .redes-sociais-footer a:hover{
 
     .container-teleconsulta .gp-details {
         flex-direction: row;
+        justify-content: space-evenly;
 
     }
 }
@@ -544,7 +556,7 @@ footer .redes-sociais-footer a:hover{
 
     .container-topo{
         flex-direction: row;
-        gap: 10%;
+        justify-content: space-evenly;
         align-items: center;
     }
 
@@ -584,18 +596,13 @@ footer .redes-sociais-footer a:hover{
         margin: 2% 0;
     }
 
-    .sobre-app{
-        flex-direction: row;
-        align-items: center;
-        margin-bottom: 3%;
+    .container-teleconsulta .gp-details{
+        margin: 56px 8%;
     }
+
 
     .sobre-app .text-app p{
         font-size: 20px;
-    }
-
-    .sobre-app .baixar{
-        margin-bottom: 0;
     }
 
     footer{
@@ -604,10 +611,80 @@ footer .redes-sociais-footer a:hover{
 
     footer p{
         font-size: 20px;
+        margin: 10px 0;
     }
 
     
 }
 
 
+/*----------------- media queries 1300px ---------------*/
+@media (min-width: 1300px){
+    .menu ul{
+        gap: 24px;
+    }
 
+    .menu ul li a{
+        font-size: 20px;
+    }
+
+    .header-content button{
+        width: 200px;
+    }
+
+    header .img-logo #logo_imrea{
+        width: 65%;
+    }
+
+    header .img-logo #logo_hc{
+        width: 25%;
+    }
+
+
+    .container-topo .text{
+        gap: 32px;
+    }
+
+    .container-topo .text p{
+        font-size: 25px;
+    }
+
+    .button-acesse a {
+        font-size: 25px;
+    }
+
+    .container-teleconsulta .text p{
+        font-size: 25px;
+    }
+
+    .container-teleconsulta .gp-details .details h3{
+        font-size: 25px;
+    }
+
+    .container-teleconsulta .gp-details .details p{
+        font-size: 20px;
+    }
+
+    .container-duvida p{
+        font-size: 25px;
+    }
+
+    .sobre-app{
+        justify-content: space-evenly;
+        margin: 50px 150px;
+    }
+
+    .sobre-app .text-app h2{
+        font-size: 25px;
+    }
+
+    .sobre-app .text-app p{
+        font-size: 25px;
+    }
+
+    .sobre-app .baixar img{
+        width: 250px;
+    }
+
+    
+}
