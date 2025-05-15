@@ -23,25 +23,6 @@ header {
     display: none;
 }
 
-/* 
-.topo .box-redes-sociais{
-    display: flex;
-    background: transparent;
-    justify-content: flex-end;
-    gap: 16px;
-    padding: 10px 20px;
-}
-
-.topo .box-redes-sociais a{
-    text-decoration: none;
-    color: #000;
-    font-size: 20px;
-    overflow: hidden;
-}
-
-.topo .box-redes-sociais li{
-    list-style: none;
-}*/
 
 .header-content {
     display: flex;
@@ -140,23 +121,38 @@ header  #logo_hc {
     color: #E44D1F;
 }
 
-.header-content button{
+.header-content .input-wrapper{
     display: flex;
     align-items: center;
-    background-color: rgba(239, 148, 121, 0.20);
+    padding: 8px 12px;
     border: none;
     border-radius: 24px;
-    padding: 8px 8px;
-    width: 200px;
-    text-align: start;
-    font-size: 16px;
-    color: #2C2C2C;
-    margin: 0 16px;
+    background-color: rgba(239, 148, 121, 0.20);
+    max-width: 200px;
 }
 
-.header-content button img{
-    padding-right: 6%;
+.header-content .input-wrapper input{
+    font-size: 16px;
+    color: #2C2C2C;
+    background-color: transparent;
+    border: none;
+    width: 90%;
 }
+
+.header-content .input-wrapper button{
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.header-content .container-search button img{
+    width: 20px;
+    height: 20px;
+}
+
 .overlay-menu {
     background-color: #0000009c;
     width: 100%;
@@ -436,7 +432,7 @@ footer .redes-sociais-footer a:hover{
 
     .container-duvida {
         margin: 80px 0;
-        padding: 50px;
+        padding: 80px;
     }
 
     .container-teleconsulta {
@@ -456,6 +452,29 @@ footer .redes-sociais-footer a:hover{
 /*----------------- media queries 768px ---------------*/
 
 @media (min-width: 768px){
+    .topo{
+        display: block;
+    }
+    .topo .box-redes-sociais{
+        display: flex;
+        background: transparent;
+        justify-content: flex-end;
+        gap: 16px;
+        padding: 0 20px;
+        padding-top: 8px;
+    }
+    
+    .topo .box-redes-sociais a{
+        text-decoration: none;
+        color: #E44D1F;
+        font-size: 20px;
+        overflow: hidden;
+    }
+    
+    .topo .box-redes-sociais li{
+        list-style: none;
+    }
+
     header .img-logo #logo_imrea {
         width: 50%;
     
@@ -471,7 +490,6 @@ footer .redes-sociais-footer a:hover{
 
     header {
         padding: 0 4%;
-        padding-top: 2%;
     }
 
     .sobre-app{
@@ -549,7 +567,7 @@ footer .redes-sociais-footer a:hover{
         text-decoration: underline;
     }
 
-    .header-content button{
+    .header-content input{
         margin: 0 8px;
         width: 150px;
     }
@@ -570,21 +588,19 @@ footer .redes-sociais-footer a:hover{
     }
 
     .container-teleconsulta .text h2{
-        font-size: 28px;
+        font-size: 24px;
         margin-top: 4%;
     }
 
     .container-teleconsulta .text p{
-        font-size: 20px;
         margin: 10px 0;
     }
 
     .container-duvida h2{
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .container-duvida p{
-        font-size: 20px;
         margin: 2% 0;
     }
 
@@ -592,17 +608,11 @@ footer .redes-sociais-footer a:hover{
         margin: 56px 8%;
     }
 
-
-    .sobre-app .text-app p{
-        font-size: 20px;
-    }
-
     footer{
         padding: 4%;
     }
 
     footer p{
-        font-size: 20px;
         margin: 10px 0;
     }
 
@@ -616,66 +626,21 @@ footer .redes-sociais-footer a:hover{
         gap: 24px;
     }
 
-    .menu ul li a{
-        font-size: 20px;
-    }
-
-    .header-content button{
-        width: 200px;
-    }
-
-    header .img-logo #logo_imrea{
-        width: 65%;
-    }
-
-    header .img-logo #logo_hc{
-        width: 25%;
-    }
-
-
     .container-topo .text{
         gap: 32px;
     }
 
-    .container-topo .text p{
-        font-size: 25px;
-    }
-
     .button-acesse a {
-        font-size: 25px;
-    }
-
-    .container-teleconsulta .text p{
-        font-size: 25px;
-    }
-
-    .container-teleconsulta .gp-details .details h3{
-        font-size: 25px;
-    }
-
-    .container-teleconsulta .gp-details .details p{
         font-size: 20px;
     }
 
-    .container-duvida p{
-        font-size: 25px;
+    .container-teleconsulta .gp-details .details h3{
+        font-size: 20px;
     }
 
     .sobre-app{
         justify-content: space-evenly;
         margin: 50px 150px;
-    }
-
-    .sobre-app .text-app h2{
-        font-size: 25px;
-    }
-
-    .sobre-app .text-app p{
-        font-size: 25px;
-    }
-
-    .sobre-app .baixar img{
-        width: 250px;
     }
 
     
