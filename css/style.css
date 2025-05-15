@@ -268,6 +268,10 @@ header  #logo_hc {
     margin: 4% 4%;
 }
 
+.container-teleconsulta .text{
+    text-align: center;
+}
+
 .container-teleconsulta .text h2 {
     font-size: 24px;
     font-weight: 700;
@@ -421,7 +425,7 @@ footer .redes-sociais-footer a:hover{
 }
 
 
-/*----------------- media queries ---------------*/
+/*----------------- media queries 600px ---------------*/
 
 @media (min-width: 600px) {
     .container-topo{
@@ -431,8 +435,8 @@ footer .redes-sociais-footer a:hover{
     }
 
     .container-duvida {
-        margin: 8% 0;
-        padding: 8% 8%;
+        margin: 80px 0;
+        padding: 50px;
     }
 
     .container-teleconsulta {
@@ -449,6 +453,7 @@ footer .redes-sociais-footer a:hover{
     
 }
 
+/*----------------- media queries 768px ---------------*/
 
 @media (min-width: 768px){
     header .img-logo #logo_imrea {
@@ -479,6 +484,8 @@ footer .redes-sociais-footer a:hover{
 
     }
 }
+
+/*----------------- media queries 992px ---------------*/
 
 @media (min-width: 992px){
     .header-content{
@@ -535,6 +542,72 @@ footer .redes-sociais-footer a:hover{
         width: 150px;
     }
 
+    .container-topo{
+        flex-direction: row;
+        gap: 10%;
+        align-items: center;
+    }
+
+    .container-topo .text{
+        max-width: 40%;
+    }
+
+    .container-topo .text h1{
+        font-size: 32px;
+    }
+
+    .container-topo .img-topo{
+        max-width: 50%;
+        margin: 0;
+    }
+
+    .button-acesse a{
+        font-size: 20px;
+    }
+
+    .container-teleconsulta .text h2{
+        font-size: 28px;
+        margin-top: 4%;
+    }
+
+    .container-teleconsulta .text p{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .container-duvida h2{
+        font-size: 28px;
+    }
+
+    .container-duvida p{
+        font-size: 20px;
+        margin: 2% 0;
+    }
+
+    .sobre-app{
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    .sobre-app .text-app p{
+        font-size: 20px;
+    }
+
+    .sobre-app .baixar{
+        margin-bottom: 0;
+    }
+
+    footer{
+        padding: 4%;
+    }
+
+    footer p{
+        font-size: 20px;
+    }
+
     
 }
+
+
 
