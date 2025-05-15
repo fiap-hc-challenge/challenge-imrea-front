@@ -18,11 +18,9 @@ header {
     padding-top: 1rem;
 }
 
-/*--------- topo ---------------*/
 .topo {
     display: none;
 }
-
 
 .header-content {
     display: flex;
@@ -300,6 +298,8 @@ header  #logo_hc {
     margin-bottom: 4%;
 }
 
+
+
 /*----------- seção duvida ------------*/
 
 .container-duvida {
@@ -320,6 +320,8 @@ header  #logo_hc {
     color: #2C2C2C;
     margin: 4% 0;
 }
+
+
 
 /*----------- sobre app ----------*/
 
@@ -365,6 +367,8 @@ header  #logo_hc {
     border: 5px solid #000;
     border-radius: 16px;
 }
+
+
 
 /*-------------- footer ---------------*/
 
@@ -529,6 +533,9 @@ footer .redes-sociais-footer a:hover{
         display: none;
     }
 
+
+/*------------ menu desktop ----------------*/
+
     .btn-abrir-menu{
         display: none;
     }
@@ -571,6 +578,9 @@ footer .redes-sociais-footer a:hover{
         margin: 0 8px;
         width: 150px;
     }
+
+/*------------- fim menu desktop ---------------*/
+
 
     .container-topo{
         flex-direction: row;

@@ -4,10 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./css/style.css">
     <script src="js/index.js" defer></script>
+
+    <!-- Ícones do Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Ícones do Google Material -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
@@ -16,78 +21,77 @@
 
 <body>
     <header>
+        <!-- Redes sociais no topo -->
         <div class="topo">
             <ul class="box-redes-sociais" aria-label="Redes sociais">
-
                 <li class="facebook">
-                    <a href="https://web.facebook.com/redelucymontoro?_rdc=1&_rdr#" target="_blank"><i
+                    <a href="https://web.facebook.com/redelucymontoro" target="_blank"><i
                             class="fab fa-facebook-f icon"></i></a>
                 </li>
-
                 <li class="instagram">
                     <a href="https://www.instagram.com/redelucymontoro/" target="_blank"><i
                             class="fab fa-instagram icon"></i></a>
                 </li>
-
             </ul>
         </div>
+
+        <!-- Cabeçalho principal -->
         <div class="header-content">
+            <!-- Logos -->
             <div class="img-logo">
                 <img id="logo_imrea" src="./img/logo_imrea.svg" alt="Logo do IMREA" title="Logo do IMREA">
                 <img id="logo_hc" src="./img/logo_hc.svg" alt="Logo do HC" title="Logo do HC">
             </div>
 
+            <!-- Menu de navegação desktop -->
             <nav class="menu" id="inicio" aria-label="Menu principal">
                 <ul>
                     <li><a id="active" href="#">Home</a></li>
-                    <li><a href="./assets/sobre.html" aria-label="Ir para a página de integrantes">Sobre nós</a></li>
-                    <li><a href="./assets/faq.html" aria-label="Ir para a página de perguntas frequentes">FAQ</a></li>
-                    <li><a href="./assets/contato.html" aria-label="Ir para a página de contato">Contato</a></li>
-                    <li><a href="./assets/tutorial.html" aria-label="Ir para a página de tutorial">Tutorial</a></li>
-                    <li><a href="./assets/simular.html" aria-label="Ir para a página de simular teleconsulta">Simular
-                            Teleconsulta</a></li>
+                    <li><a href="./assets/sobre.html">Sobre nós</a></li>
+                    <li><a href="./assets/faq.html">FAQs</a></li>
+                    <li><a href="./assets/contato.html">Contato</a></li>
+                    <li><a href="./assets/tutorial.html">Tutorial</a></li>
+                    <li><a href="./assets/simular.html">Simular Teleconsulta</a></li>
                 </ul>
             </nav>
 
+            <!-- Barra de pesquisa com ícone -->
             <div class="container-search">
                 <div class="input-wrapper">
-                    <input type="text" class="search" placeholder="Pesquisar" name="search" id="search"
-                        aria-label="Campo de pesquisa">
+                    <input type="text" class="search" placeholder="Pesquisar" id="search" aria-label="Campo de pesquisa">
                     <img src="./img/Search.svg" alt="Ícone de busca">
                 </div>
             </div>
 
+            <!-- Botão de abrir menu mobile -->
             <div class="btn-abrir-menu" id="btn-menu">
                 <span class="material-symbols-outlined icon" aria-label="Abrir menu">menu</span>
             </div>
 
+            <!-- Menu mobile -->
             <div class="menu-mobile" id="menu-mobile">
                 <div class="btn-fechar">
-                    <span class="material-symbols-outlined icon" aria-label="Fechar menu">
-                        close
-                    </span>
+                    <span class="material-symbols-outlined icon" aria-label="Fechar menu">close</span>
                 </div>
                 <nav aria-label="Menu mobile">
                     <ul>
                         <li><a id="active" href="#">Home</a></li>
-                        <li><a href="./assets/sobre.html" aria-label="Ir para a página de integrantes">Sobre nós</a>
-                        </li>
-                        <li><a href="./assets/faq.html" aria-label="Ir para a página de perguntas frequentes">FAQ</a>
-                        </li>
-                        <li><a href="./assets/contato.html" aria-label="Ir para a página de contato">Contato</a></li>
-                        <li><a href="./assets/tutorial.html" aria-label="Ir para a página de tutorial">Tutorial</a></li>
-                        <li><a href="./assets/simular.html"
-                                aria-label="Ir para a página de simular teleconsulta">Simular Teleconsulta</a></li>
+                        <li><a href="./assets/sobre.html">Sobre nós</a></li>
+                        <li><a href="./assets/faq.html">FAQs</a></li>
+                        <li><a href="./assets/contato.html">Contato</a></li>
+                        <li><a href="./assets/tutorial.html">Tutorial</a></li>
+                        <li><a href="./assets/simular.html">Simular Teleconsulta</a></li>
                     </ul>
                 </nav>
             </div>
     </header>
 
     <main>
+        <!-- Seção topo com chamada principal -->
         <section class="container-topo">
             <div class="text">
                 <h1>Seu cuidado,começa aqui! Acesse, entenda e participe da sua <span class="destaque">consulta com
-                        tranquilidade.</span></h1>
+                    tranquilidade.</span></h1>
                 <p>Preparamos tudo para que sua consulta online seja simples, clara e possível para você.</p>
                 <div class="button-acesse">
                     <a class="pulsante" href="./assets/tutorial.html">Acesse o tutorial</a>
@@ -99,6 +103,7 @@
             </div>
         </section>
 
+        <!-- Benefícios da teleconsulta -->
         <section class="container-teleconsulta">
             <div class="text">
                 <h2>Com a teleconsulta do IMREA e do Hospital das Clínicas</h2>
@@ -125,22 +130,24 @@
             </div>
         </section>
 
+        <!-- Chamada para o tutorial -->
         <section class="container-duvida">
             <h2>Está com dúvida de como acessar o aplicativo?</h2>
-            <p>Clique no botão e encontre o tutorial feito especialmente para você</p>
+            <p>Clique no botão e encontre o tutorial feito especialmente para você!</p>
             <div class="button-acesse">
                 <a class="pulsante" href="./assets/tutorial.html">Acesse o tutorial</a>
             </div>
         </section>
 
+        <!-- Explicação sobre o aplicativo -->
         <section class="sobre-app">
             <div class="text-app">
                 <h2>SOBRE O APLICATIVO</h2>
-                <p>Para participar da sua consulta online, você precisa instalar o aplicativo Portal do Paciente HC no
-                    seu celular. É por ele que você verá o dia e horário da consulta, poderá acessar o link da sala e
-                    conversar com o profissional.</p>
+                <p>Para participar da sua consulta online, você precisa instalar o aplicativo Portal do Paciente HC no seu celular. É por ele que você verá o dia e horário da consulta, poderá acessar o link da sala e conversar com o profissional.</p>
                 <p>É simples, gratuito e seguro.</p>
             </div>
+
+            <!-- Botões para download -->
             <div class="baixar">
                 <a href="#"><img src="./img/googlePlay.png" alt="Logo da Google Play"></a>
                 <a href="#"><img src="./img/appStore.png" alt="Logo da App Store"></a>
@@ -148,25 +155,27 @@
         </section>
     </main>
 
+    <!-- Rodapé -->
     <footer aria-label="Rodapé do site">
         <img src="./img/logo_imrea.svg" alt="Logo do IMREA">
         <p>Desenvolvido por alunos da FIAP para tornar a teleconsulta mais acessível a todos.</p>
+
+        <!-- Menu do rodapé -->
         <ul class="menu-footer">
             <li><a href="#">Home</a></li>
-            <li><a href="./assets/sobre.html" aria-label="Ir para a página de integrantes">Sobre nós</a></li>
-            <li><a href="./assets/faq.html" aria-label="Ir para a página de perguntas frequentes">FAQ</a></li>
-            <li><a href="./assets/contato.html" aria-label="Ir para a página de contato">Contato</a></li>
-            <li><a href="./assets/tutorial.html" aria-label="Ir para a página de tutorial">Tutorial</a></li>
-            <li><a href="./assets/simular.html" aria-label="Ir para a página de simular teleconsulta">Simular
-                    Teleconsulta</a></li>
+            <li><a href="./assets/sobre.html">Sobre nós</a></li>
+            <li><a href="./assets/faq.html">FAQs</a></li>
+            <li><a href="./assets/contato.html">Contato</a></li>
+            <li><a href="./assets/tutorial.html">Tutorial</a></li>
+            <li><a href="./assets/simular.html">Simular Teleconsulta</a></li>
         </ul>
 
+        <!-- Redes sociais no rodapé -->
         <ul class="redes-sociais-footer" aria-label="Redes sociais no rodapé">
             <li class="facebook">
-                <a href="https://web.facebook.com/redelucymontoro?_rdc=1&_rdr#" target="_blank"><i
+                <a href="https://web.facebook.com/redelucymontoro" target="_blank"><i
                         class="fab fa-facebook-f icon"></i></a>
             </li>
-
             <li class="instagram">
                 <a href="https://www.instagram.com/redelucymontoro/" target="_blank"><i
                         class="fab fa-instagram icon"></i></a>
