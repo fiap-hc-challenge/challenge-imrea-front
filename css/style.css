@@ -43,7 +43,7 @@ header {
     list-style: none;
 }*/
 
-.header {
+.header-content {
     display: flex;
     padding: 10px 0;
     justify-content: space-between;
@@ -120,6 +120,11 @@ header .img-logo #logo_hc {
     text-decoration: none;
 }
 
+.menu-mobile nav ul #active{
+    background-color: white;
+    color: #E44D1F;
+}
+
 .menu-mobile nav ul li a {
     color: white;
     font-optical-sizing: auto;
@@ -135,7 +140,7 @@ header .img-logo #logo_hc {
     color: #E44D1F;
 }
 
-.header button{
+.header-content button{
     display: flex;
     align-items: center;
     background-color: rgba(239, 148, 121, 0.20);
@@ -149,7 +154,7 @@ header .img-logo #logo_hc {
     margin: 0 16px;
 }
 
-.header button img{
+.header-content button img{
     padding-right: 6%;
 }
 .overlay-menu {
@@ -195,29 +200,26 @@ header .img-logo #logo_hc {
     color: #2C2C2C;
 }
 
-.button-acesse button {
+.button-acesse a{
     background-color: #E44D1F;
     padding: 8px 64px;
     border: none;
     border-radius: 12px;
-}
-
-.button-acesse button a {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
     font-weight: 500;
 }
 
-.button-acesse button:hover {
+.button-acesse a:hover {
     background-color: #e44d1fd0;
 }
 
-.button-acesse button:focus {
+.button-acesse a:focus {
     outline: 2.5px solid #000;
     background-color: #e44d1fd0;
 }
-.button-acesse button.pulsante {
+.button-acesse a.pulsante {
     transition: all 0.3s ease-in-out;
     border: none;
     outline: none;
@@ -225,7 +227,7 @@ header .img-logo #logo_hc {
   }
   
 
-.button-acesse button.pulsante {
+.button-acesse a.pulsante {
     animation: pulse 1.2s infinite;
 }
 
@@ -245,44 +247,6 @@ header .img-logo #logo_hc {
         box-shadow: 0 0 0 rgba(228, 77, 31, 0.4);
     }
 }
-
-
-/*--------------- grid topo -------------*/
-
-/* .container-topo .grid-topo {
-    display: grid;
-    grid-template-areas:
-        "column1 column2 column3";
-    margin: 10% 5px;
-    justify-content: center;
-}
-
-.container-topo .grid-topo .column1 img {
-    width: 100%;
-}
-
-.container-topo .grid-topo .column1 .circle {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #FACA7D;
-}
-
-.container-topo .grid-topo .column2 img {
-    width: 210px;
-}
-
-.container-topo .grid-topo .column3 img {
-    width: 100%;
-    max-width: 150px;
-}
-
-.container-topo .grid-topo .column3 .squad {
-    width: 80px;
-    height: 80px;
-    border-radius: 20%;
-    background-color: #E99FB9;
-} */
 
 .container-topo .img-topo{
     margin: 8% 0;
@@ -517,7 +481,7 @@ footer .redes-sociais-footer a:hover{
 }
 
 @media (min-width: 992px){
-    .header{
+    .header-content{
         justify-content: center;
     }
     .container-topo {
@@ -542,6 +506,10 @@ footer .redes-sociais-footer a:hover{
         gap: 16px;
     }
 
+    .menu #active{
+        text-decoration: underline;
+    }
+
     .menu ul li{
         list-style: none;
     }
@@ -562,7 +530,7 @@ footer .redes-sociais-footer a:hover{
         text-decoration: underline;
     }
 
-    .header button{
+    .header-content button{
         margin: 0 8px;
         width: 150px;
     }

@@ -17,7 +17,7 @@
 <body>
     <header>
         <div class="topo">
-            <ul class="box-redes-sociais">
+            <ul class="box-redes-sociais" aria-label="Redes sociais">
 
                 <li class="facebook">
                     <a href="https://www.facebook.com/profile.php?id=61562199397492&locale=pt_BR" target="_blank"><i
@@ -31,43 +31,45 @@
 
             </ul>
         </div>
-        <div class="header">
+        <div class="header-content">
             <div class="img-logo">
                 <img id="logo_imrea" src="./img/logo_imrea.svg" alt="Logo do IMREA" title="Logo do IMREA">
                 <img id="logo_hc" src="./img/logo_hc.svg" alt="Logo do HC" title="Logo do HC">
             </div>
 
-            <nav class="menu" id="inicio">
+            <nav class="menu" id="inicio" aria-label="Menu principal">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="./assets/sobre.html">Sobre nós</a></li>
-                    <li><a href="./assets/faq.html">FAQ</a></li>
-                    <li><a href="./assets/contato.html">Contato</a></li>
-                    <li><a href="./assets/tutorial.html">Tutorial</a></li>
-                    <li><a href="./assets/simular.html">Simular Teleconsulta</a></li>
+                    <li><a id="active" href="#">Home</a></li>
+                    <li><a href="./assets/sobre.html" aria-label="Ir para a página de integrantes">Sobre nós</a></li>
+                    <li><a href="./assets/faq.html" aria-label="Ir para a página de perguntas frequentes">FAQ</a></li>
+                    <li><a href="./assets/contato.html" aria-label="Ir para a página de contato">Contato</a></li>
+                    <li><a href="./assets/tutorial.html" aria-label="Ir para a página de tutorial">Tutorial</a></li>
+                    <li><a href="./assets/simular.html" aria-label="Ir para a página de simular teleconsulta">Simular Teleconsulta</a></li>
                 </ul>
             </nav>
-            
+
             <button><img src="./img/Search.svg" alt="icone de procurar">Pesquisar</button>
 
             <div class="btn-abrir-menu" id="btn-menu">
-                <span class="material-symbols-outlined icon">menu</span>
+                <span class="material-symbols-outlined icon" aria-label="Abrir menu">menu</span>
             </div>
 
             <div class="menu-mobile" id="menu-mobile">
                 <div class="btn-fechar">
-                    <span class="material-symbols-outlined icon">
+                    <span class="material-symbols-outlined icon" aria-label="Fechar menu">
                         close
                     </span>
                 </div>
-                <nav>
+                <nav aria-label="Menu mobile">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="./assets/sobre.html">Sobre nós</a></li>
-                        <li><a href="./assets/faq.html">FAQ</a></li>
-                        <li><a href="./assets/contato.html">Contato</a></li>
-                        <li><a href="./assets/tutorial.html">Tutorial</a></li>
-                        <li><a href="./assets/simular.html">Simular Teleconsulta</a></li>
+                        <li><a id="active" href="#">Home</a></li>
+                        <li><a href="./assets/sobre.html" aria-label="Ir para a página de integrantes">Sobre nós</a>
+                        </li>
+                        <li><a href="./assets/faq.html" aria-label="Ir para a página de perguntas frequentes">FAQ</a>
+                        </li>
+                        <li><a href="./assets/contato.html" aria-label="Ir para a página de contato">Contato</a></li>
+                        <li><a href="./assets/tutorial.html" aria-label="Ir para a página de tutorial">Tutorial</a></li>
+                        <li><a href="./assets/simular.html" aria-label="Ir para a página de simular teleconsulta">Simular Teleconsulta</a></li>
                     </ul>
                 </nav>
             </div>
@@ -80,29 +82,12 @@
                         tranquilidade.</span></h1>
                 <p>Preparamos tudo para que sua consulta online seja simples, clara e possível para você.</p>
                 <div class="button-acesse">
-                    <button class="pulsante"><a href="./assets/tutorial.html">Acesse o tutorial</a></button>
+                    <a class="pulsante" href="./assets/tutorial.html">Acesse o tutorial</a>
                 </div>
             </div>
 
             <div class="img-topo">
-                <img src="./img/img-topo.png" alt="">
-            </div>
-
-            <!-- <div class="grid-topo">
-                <div class="column1">
-                    <img src="./img/image-grid1.png" alt="Mulher ajudando um paciente na reabilitação">
-                    <div class="circle"></div>
-                    <img src="./img/image-grid2.png"
-                        alt="Pessoa em uma cadeira derodas jogando tênis de mesa contra outra pessoa">
-                </div>
-                <div class="column2">
-                    <img src="./img/image-grid.png" alt="Senhora na teleconsulta com sua médica">
-                </div>
-                <div class="column3">
-                    <div class="squad"></div>
-                    <img src="./img/image-grid4.png" alt="">
-                    <img src="./img/image-grid5.png" alt="">
-                </div> -->
+                <img src="./img/img-topo.png" alt="Imagens de médicos ajudando pacientes na reabilitação">
             </div>
         </section>
 
@@ -112,23 +97,23 @@
                 <p>Você recebe atendimento especializado de onde estiver, com apoio para cada etapa.</p>
             </div>
             <div class="gp-details">
-                <div class="details">
+                <article class="details">
                     <h3>Por que existe?</h3>
                     <p>Criada para garantir que você continue seu tratamento com segurança, sem precisar sair de
                         casa.</p>
-                </div>
+                </article>
 
-                <div class="details">
+                <article class="details">
                     <h3>Por onde acessar?</h3>
                     <p>Pelo aplicativo oficial, você pode se consultar, de forma simples, acessível e com o suporte
                         necessário.</p>
-                </div>
+                </article>
 
-                <div class="details">
+                <article class="details">
                     <h3>Com quem?</h3>
                     <p>Com profissionais como nutricionistas, psicólogos, terapeutas ocupacionais e entre outros.
                     </p>
-                </div>
+                </article>
             </div>
         </section>
 
@@ -136,7 +121,7 @@
             <h2>Está com dúvida de como acessar o aplicativo?</h2>
             <p>Clique no botão e encontre o tutorial feito especialmente para você</p>
             <div class="button-acesse">
-                <button class="button-duvida pulsante"><a href="./assets/tutorial.html">Acesse o tutorial</a></button>
+                <a class="pulsante" href="./assets/tutorial.html">Acesse o tutorial</a>
             </div>
         </section>
 
@@ -149,25 +134,25 @@
                 <p>É simples, gratuito e seguro.</p>
             </div>
             <div class="baixar">
-                <a href="#"><img src="./img/googlePlay.png" alt=""></a>
-                <a href="#"><img src="./img/appStore.png" alt=""></a>
+                <a href="#"><img src="./img/googlePlay.png" alt="Logo da Google Play"></a>
+                <a href="#"><img src="./img/appStore.png" alt="Logo da App Store"></a>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer aria-label="Rodapé do site">
         <img src="./img/logo_imrea.svg" alt="Logo do IMREA">
         <p>Desenvolvido por alunos da FIAP para tornar a teleconsulta mais acessível a todos.</p>
         <ul class="menu-footer">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre nós</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Tutorial</a></li>
-            <li><a href="#">Simular teleconsulta</a></li>
+            <li><a href="./assets/sobre.html" aria-label="Ir para a página de integrantes">Sobre nós</a></li>
+            <li><a href="./assets/faq.html" aria-label="Ir para a página de perguntas frequentes">FAQ</a></li>
+            <li><a href="./assets/contato.html" aria-label="Ir para a página de contato">Contato</a></li>
+            <li><a href="./assets/tutorial.html" aria-label="Ir para a página de tutorial">Tutorial</a></li>
+            <li><a href="./assets/simular.html" aria-label="Ir para a página de simular teleconsulta">Simular Teleconsulta</a></li>
         </ul>
 
-        <ul class="redes-sociais-footer">
+        <ul class="redes-sociais-footer" aria-label="Redes sociais no rodapé">
             <li class="facebook">
                 <a href="https://www.facebook.com/profile.php?id=61562199397492&locale=pt_BR" target="_blank"><i
                         class="fab fa-facebook-f icon"></i></a>
