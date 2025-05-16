@@ -53,6 +53,7 @@
     flex-direction: column;
     margin: 4%;
     gap: 16px;
+    align-items: center;
 }
 
 .nosso-obj h2{
