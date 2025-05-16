@@ -34,7 +34,7 @@
     background-color: #fff;
     display: inline-block;
     padding: 4px 8px;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #E44D1F;
     border-radius: 16px;
@@ -42,7 +42,7 @@
 
 .sobre-text p{
     padding-top: 10px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 
@@ -59,7 +59,7 @@
 .nosso-obj h2{
     background-color: #E44D1F;
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 600;
     display: inline-block;
     padding: 4px 8px;
@@ -68,7 +68,7 @@
 }
 
 .nosso-obj p{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     max-width: 500px;
 }
 
@@ -85,14 +85,14 @@
 }
 
 .membrostime h2{
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: #2C2C2C;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 .membrostime h2 span{
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: #E44D1F;
     font-weight: 700;
 }
