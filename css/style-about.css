@@ -1,8 +1,7 @@
 
 /*-------------- banner ------------*/
 
-.banner{
-    
+.banner{ 
     color: #fff;
     padding-top: 70px;
 }
@@ -19,18 +18,23 @@
 
 /*----------------- seção sobre nós ------------------------*/
 
-.sobre-text{
+.container-sobre{
+    display: flex;
+    justify-content: center;
+}
+
+.text-sobre{
     background-color: #E44D1F;
     color: #fff;
     text-align: center;
-    padding: 24px 24px;
+    padding: 32px;
     margin: 24px 4%;
-    display: inline-block;
     border-radius: 16px;
     box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.2);
+    display: inline-block;
 }
 
-.sobre-text h2{
+.container-sobre h2{
     background-color: #fff;
     display: inline-block;
     padding: 4px 8px;
@@ -40,9 +44,11 @@
     border-radius: 16px;
 }
 
-.sobre-text p{
-    padding-top: 10px;
+.container-sobre p{
+    padding-top: 24px;
     font-size: 1.6rem;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 
@@ -51,9 +57,8 @@
 .nosso-obj{
     display: flex;
     flex-direction: column;
-    margin: 8%;
+    margin: 32px;
     gap: 16px;
-    align-items: center;
 }
 
 .nosso-obj h2{
@@ -69,7 +74,7 @@
 
 .nosso-obj p{
     font-size: 1.6rem;
-    max-width: 500px;
+    max-width: 400px;
 }
 
 .nosso-obj img{
@@ -170,3 +175,22 @@
     outline: 2px solid #000;
     border-radius: 34px;
  }
+
+
+/*----------------- media queries 600px ---------------*/
+
+@media (min-width: 600px){
+    .nosso-obj{
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+
+/*----------------- media queries 768px ---------------*/
+
+@media (min-width: 768px){
+    .banner{
+        padding-top: 100px;
+    }
+}
