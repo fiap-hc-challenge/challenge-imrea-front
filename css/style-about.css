@@ -51,9 +51,8 @@
 .nosso-obj{
     display: flex;
     flex-direction: column;
-    margin: 4%;
+    margin: 8%;
     gap: 16px;
-    align-items: center;
 }
 
 .nosso-obj h2{
@@ -74,6 +73,7 @@
 
 .nosso-obj img{
     width: 200px;
+    height: auto;
 }
 
 
@@ -81,7 +81,7 @@
 
 .membrostime{
     text-align: center;
-    margin: 40px 0;
+    margin: 60px 0;
 }
 
 .membrostime h2{
@@ -102,7 +102,7 @@
    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
 }
 
 .card {
@@ -163,4 +163,9 @@
  }
  .card-icons img:hover {
     transform: scale(1.1);
+ }
+
+ .card-icons img:focus{
+    outline: 2px solid #000;
+    border-radius: 34px;
  }
