@@ -1,0 +1,14 @@
+/*-------------- banner ------------*/
+
+.banner{ 
+    color: #fff;
+    padding-top: 70px;
+}
+
+.banner h1{
+    background-color: #D34074;
+    padding: 72px;
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: center;
+}
