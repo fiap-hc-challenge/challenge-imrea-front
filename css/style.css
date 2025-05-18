@@ -59,7 +59,7 @@ header  #logo_hc {
     color: #E44D1F;
     font-size: 3.2rem;
     display: block;
-    margin-right: 20px;
+    margin: 0 20px;
 }
 
 .btn-abrir-menu .icon:focus {
@@ -171,9 +171,11 @@ header  #logo_hc {
 
 .container-topo {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
     padding: 0 4%;
-    padding-top: 20%;
+    padding-top: 100px;
 }
 
 .container-topo .text h1 {
@@ -263,7 +265,7 @@ header  #logo_hc {
 /*--------- container-teleconsulta ------------*/
 
 .container-teleconsulta {
-    margin: 4% 4%;
+    margin: 8% 4%;
 }
 
 .container-teleconsulta .text{
@@ -294,6 +296,8 @@ header  #logo_hc {
     color: #fff;
     border-radius: 8px;
     padding: 16px;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .container-teleconsulta .gp-details .details h3 {
@@ -311,7 +315,7 @@ header  #logo_hc {
 /*----------- seção duvida ------------*/
 
 .container-duvida {
-    margin: 16% 0;
+    /* margin: 16% 0; */
     padding: 12% 4%;
     text-align: center;
 }
@@ -334,8 +338,10 @@ header  #logo_hc {
 
 .sobre-app{
     margin: 0 4%;
+    margin-top: 32px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .sobre-app .text-app h2{
@@ -353,6 +359,7 @@ header  #logo_hc {
     font-size: 1.6rem;
     margin: 8% 0;
     color: #2C2C2C;
+    max-width: 500px;
 }
 
 .sobre-app .baixar{
@@ -435,23 +442,17 @@ footer .redes-sociais-footer a:hover{
 /*----------------- media queries 600px ---------------*/
 
 @media (min-width: 600px) {
-    .container-topo{
-        padding: 0 8%;
-        padding-top: 15%; 
-        
-    }
 
     .container-duvida {
-        margin: 80px 0;
-        padding: 80px;
+        padding: 40px;
     }
 
     .container-teleconsulta {
-        margin: 4% 8%;
+        margin: 64px;
     }
 
     .sobre-app{
-        margin: 0 8%;
+        margin: 56px 32px;
     }
 
     footer{
@@ -499,11 +500,26 @@ footer .redes-sociais-footer a:hover{
         padding: 0 4%;
     }
 
+    .container-topo{
+        padding-top: 150px;
+    }
+
+    .container-teleconsulta .gp-details {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container-teleconsulta .gp-details .details{
+        margin: 0;
+    }
+
     .sobre-app{
         flex-direction: row;
         align-items: center;
         margin-bottom: 3%;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 32px;
+        
     }
 
     .sobre-app .baixar{
@@ -512,14 +528,10 @@ footer .redes-sociais-footer a:hover{
 
     .sobre-app .text-app p {
         margin: 4% 0;
-        max-width: 80%;
+        /* max-width: 80%; */
     }
 
-    .container-teleconsulta .gp-details {
-        flex-direction: row;
-        justify-content: space-evenly;
-
-    }
+   
 }
 
 /*----------------- media queries 992px ---------------*/
@@ -527,9 +539,6 @@ footer .redes-sociais-footer a:hover{
 @media (min-width: 992px){
     .header-content{
         justify-content: space-evenly;
-    }
-    .container-topo {
-        padding-top: 12%;
     }
 
     .menu-mobile{
@@ -586,13 +595,11 @@ footer .redes-sociais-footer a:hover{
 
 
     .container-topo{
-        flex-direction: row;
-        justify-content: space-evenly;
         align-items: center;
     }
 
     .container-topo .text{
-        max-width: 40%;
+        max-width: 500px;
     }
 
     .container-topo .img-topo{
@@ -606,11 +613,11 @@ footer .redes-sociais-footer a:hover{
 
 
     .container-duvida p{
-        margin: 2% 0;
+        margin: 24px 0;
     }
 
     .container-teleconsulta .gp-details{
-        margin: 56px 8%;
+        margin: 50px 0;
     }
 
     footer{
@@ -644,7 +651,6 @@ footer .redes-sociais-footer a:hover{
     }
 
     .sobre-app{
-        justify-content: space-evenly;
         margin: 50px 150px;
     }
 

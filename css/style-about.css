@@ -8,7 +8,7 @@
 
 .banner h1{
     background-color: #E44D1F;
-    padding: 64px;
+    padding: 72px;
     font-size: 3.2rem;
     font-weight: 600;
     text-align: center;
@@ -27,8 +27,8 @@
     background-color: #E44D1F;
     color: #fff;
     text-align: center;
-    padding: 32px;
-    margin: 24px 4%;
+    padding: 40px;
+    margin: 40px 4%;
     border-radius: 16px;
     box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.2);
     display: inline-block;
@@ -37,17 +37,17 @@
 .container-sobre h2{
     background-color: #fff;
     display: inline-block;
-    padding: 4px 8px;
+    padding: 8px 12px;
     font-size: 2rem;
     font-weight: 700;
     color: #E44D1F;
-    border-radius: 16px;
+    border-radius: 20px;
 }
 
 .container-sobre p{
     padding-top: 24px;
     font-size: 1.6rem;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -74,11 +74,11 @@
 
 .nosso-obj p{
     font-size: 1.6rem;
-    max-width: 400px;
+    max-width: 450px;
 }
 
 .nosso-obj img{
-    width: 200px;
+    width: 250px;
     height: auto;
 }
 
@@ -183,6 +183,8 @@
     .nosso-obj{
         flex-direction: row;
         justify-content: center;
+        gap: 48px;
+        margin:  64px 32px;
     }
 }
 
@@ -192,5 +194,26 @@
 @media (min-width: 768px){
     .banner{
         padding-top: 100px;
+    }
+
+    .container-sobre{
+        padding-top: 32px;
+    }
+
+    .container-sobre p{
+        font-size: 1.8rem;
+    }
+
+
+    .nosso-obj p{
+        font-size: 1.8rem;
+    }
+
+    .membrostime h2{
+        font-size: 2.4rem;
+    }
+
+    .membrostime h2 span{
+        font-size: 2.4rem;
     }
 }
