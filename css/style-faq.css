@@ -15,15 +15,28 @@
 
 /*----------------- seção categorias ------------------------*/
 
+.container-faq{
+    display: none;
+}
+
+.container-faq.ativado{
+    display: block;
+}
+
 .container-categorias{
     margin: 16px 0;
-    text-align: center;
+    
 }
 
 .container-categorias h2{
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 10px;
+    text-align: center;
+}
+
+.container-categorias .categoria{
+    text-align: center;
 }
 
 .container-categorias button{
@@ -33,6 +46,11 @@
     border-radius: 8px;
     margin: 2px;
     font-size: 1.4rem;
+}
+
+.container-categorias .ativo{
+    background-color: #D34074;
+    color: #fff;
 }
 
 
