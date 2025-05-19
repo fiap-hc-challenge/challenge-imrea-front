@@ -163,7 +163,7 @@
 }
 
 .faq .resposta p{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .faq input[type="radio"]:checked + label{
@@ -179,7 +179,7 @@
 
 .faq input[type="radio"]:checked + label + .resposta{
     max-height: 400px;
-    padding: 10px 10px 20px;
+    padding: 10px 15px 20px;
     background-color: #D34074;
     color: #fff;
     border-radius: 0 0 10px 10px;
