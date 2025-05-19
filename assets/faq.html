@@ -95,34 +95,38 @@
 
     <section class="container-categorias">
         <h2>Clique na categoria da sua dúvida:</h2>
-        <div class="categoria">
-            <button class="ativo pulsante" id="tele">Teleconsulta</button>
-            <button class="pulsante" id="app">Uso do Aplicativo</button>
-            <button class="pulsante" id="agendamento">Sobre agendamento e faltas</button>
-            <button class="pulsante" id="dificuldade">Para quem tem dificuldades</button>
+        <div class="categoria" role="tablist" aria-label="Categorias de perguntas">
+            <button class="ativo pulsante" id="tele" role="tab" aria-selected="true" aria-controls="container-tele">Teleconsulta</button>
+                <button class="pulsante" id="app" role="tab" aria-selected="false" aria-controls="container-app">Uso do Aplicativo</button>
+                <button class="pulsante" id="agendamento" role="tab" aria-selected="false" aria-controls="container-agendamento">Agendamento e faltas</button>
+                <button class="pulsante" id="dificuldade" role="tab" aria-selected="false" aria-controls="container-dificuldade">Para quem tem dificuldades</button>
         </div>
 
-        <section class="container-faq ativado" id="container-tele">
+
+         <!-- Container de perguntas e respostas (Teleconsulta) -->
+
+        <section class="container-faq ativado" id="container-tele" role="tabpanel" aria-labelledby="tele">
         <h3>Teleconsulta</h3>
         <ul class="faq">
+            <!-- perguntas e respostas -->
             <li>
                 <input type="radio" name="acordeon" id="primeiro">
-                <label for="primeiro">O que é a teleconsulta?</label>
-                <div class="resposta">
+                <label for="primeiro" aria-controls="resposta1" aria-expanded="false">O que é a teleconsulta?</label>
+                <div class="resposta" id="resposta1">
                     <p>É uma consulta feita por vídeo, com o mesmo cuidado e atenção de uma consulta presencial. Você conversa com seu profissional de saúde de forma segura, sem sair de casa.</p>
                 </div>
             </li>
             <li>
                 <input type="radio" name="acordeon" id="segundo">
-                <label for="segundo">Preciso pagar pela teleconsulta?</label>
-                <div class="resposta">
+                <label for="segundo" aria-controls="resposta2" aria-expanded="false">Preciso pagar pela teleconsulta?</label>
+                <div class="resposta" id="resposta2">
                     <p>Não. A teleconsulta é gratuita para os pacientes do IMREA e do Hospital das Clínicas.</p>
                 </div>
             </li>
             <li>
                 <input type="radio" name="acordeon" id="terceiro">
-                <label for="terceiro">Quais profissionais fazem a teleconsulta?</label>
-                <div class="resposta">
+                <label for="terceiro" aria-controls="resposta3" aria-expanded="false">Quais profissionais fazem a teleconsulta?</label>
+                <div class="resposta" id="resposta3">
                     <p>Nutricionistas, psicólogos, terapeutas ocupacionais e outros profissionais especializados no seu tratamento.</p>
                 </div>
             </li>
@@ -132,29 +136,30 @@
 
     
     
+    <!-- Container de perguntas e respostas (Uso do Aplicativo) -->
 
-
-    <section class="container-faq" id="container-app">
+    <section class="container-faq" id="container-app" role="tabpanel" aria-labelledby="app">
         <h3>Uso do Aplicativo</h3>
         <ul class="faq">
+            <!-- perguntas e respostas -->
             <li>
                 <input type="radio" name="acordeon" id="quarto">
-                <label for="quarto">Como eu baixo o aplicativo para a teleconsulta?</label>
-                <div class="resposta">
+                <label for="quarto" aria-controls="resposta4" aria-expanded="false">Como eu baixo o aplicativo para a teleconsulta?</label>
+                <div class="resposta" id="resposta4">
                     <p>Você pode acessar o link enviado por SMS ou WhatsApp. O guia com o passo a passo está aqui. Se tiver dúvidas, um familiar pode ajudar ou você pode entrar em contato com o suporte.</p>
                 </div>
             </li>
             <li>
                 <input type="radio" name="acordeon" id="quinto">
-                <label for="quinto">Não consegui entrar no app. O que eu faço?</label>
-                <div class="resposta">
+                <label for="quinto" aria-controls="resposta5" aria-expanded="false">Não consegui entrar no app. O que eu faço?</label>
+                <div class="resposta" id="resposta5">
                     <p>Verifique se o celular é compatível e se tem conexão com a internet. Se o problema continuar, entre em contato com o suporte administrativo do IMREA.</p>
                 </div>
             </li>
             <li>
                 <input type="radio" name="acordeon" id="sexto">
-                <label for="sexto">Preciso instalar o app mesmo?</label>
-                <div class="resposta">
+                <label for="sexto" aria-controls="resposta6" aria-expanded="false">Preciso instalar o app mesmo?</label>
+                <div class="resposta" id="resposta6">
                     <p>Sim, é necessário para realizar a consulta. Mas o processo é simples e explicamos cada passo para você.
                     </p>
                 </div>
@@ -163,27 +168,30 @@
     </section>
 
 
-    <section class="container-faq" id="container-agendamento">
+    <!-- Container de perguntas e respostas (Agendamento e faltas) -->
+
+    <section class="container-faq" id="container-agendamento" role="tabpanel" aria-labelledby="agendamento">
         <h3>Sobre agendamento e faltas</h3>
         <ul class="faq">
+            <!-- perguntas e respostas -->
             <li>
                 <input type="radio" name="acordeon" id="setimo">
-                <label for="setimo">Como sei o dia e horário da minha consulta?</label>
-                <div class="resposta">
+                <label for="setimo" aria-controls="resposta7" aria-expanded="false">Como sei o dia e horário da minha consulta?</label>
+                <div class="resposta" id="resposta7">
                     <p>Você receberá uma mensagem por WhatsApp e/ou SMS com o dia, horário e link da consulta.</p>
                 </div>
             </li>
             <li>
                 <input type="radio" name="acordeon" id="oitavo">
-                <label for="oitavo">Esqueci da consulta. E agora?</label>
-                <div class="resposta">
+                <label for="oitavo" aria-controls="resposta8" aria-expanded="false">Esqueci da consulta. E agora?</label>
+                <div class="resposta" id="resposta8">
                     <p>Entre em contato com o suporte. Eles vão reagendar se necessário.</p>
                 </div>
             </li>
             <li>
                 <input type="radio" name="acordeon" id="nono">
-                <label for="nono">Não consegui entrar na hora da consulta. Vou perder o atendimento?</label>
-                <div class="resposta">
+                <label for="nono" aria-controls="resposta9" aria-expanded="false">Não consegui entrar na hora da consulta. Vou perder o atendimento?</label>
+                <div class="resposta" id="resposta9">
                     <p>Se houver imprevistos, entre em contato o quanto antes para tentar um novo agendamento.
                     </p>
                 </div>
@@ -192,27 +200,30 @@
     </section>
 
 
-    <section class="container-faq" id="container-dificuldade">
+    <!-- Container de perguntas e respostas (Para quem tem dificuldades) -->
+
+    <section class="container-faq" id="container-dificuldade" role="tabpanel" aria-labelledby="dificuldade">
         <h3>Para quem tem dificuldades</h3>
         <ul class="faq">
+            <!-- perguntas e respostas -->
             <li>
                 <input type="radio" name="acordeon" id="decimo">
-                <label for="decimo">E se eu tiver dificuldade para usar o celular?</label>
-                <div class="resposta">
+                <label for="decimo" aria-controls="resposta10" aria-expanded="false">E se eu tiver dificuldade para usar o celular?</label>
+                <div class="resposta" id="resposta10">
                     <p>Criamos um guia simples com imagens e letras grandes. Se precisar, um cuidador ou familiar pode acessar junto com você.</p>
                 </div>
             </li>
             <li>
                 <input type="radio" name="acordeon" id="decimo-um">
-                <label for="decimo-um">Preciso instalar o aplicativo antes da consulta?</label>
-                <div class="resposta">
+                <label for="decimo-um" aria-controls="resposta11" aria-expanded="false">Preciso instalar o aplicativo antes da consulta?</label>
+                <div class="resposta" id="resposta11">
                     <p>Sim. O app Portal do Paciente HC precisa estar instalado no celular antes do horário da consulta. Não se preocupe: explicamos como fazer isso passo a passo no site e você pode pedir ajuda de alguém se precisar.</p>
                 </div>
             </li>
             <li>
                 <input type="radio" name="acordeon" id="decimo-dois">
-                <label for="decimo-dois">E se a consulta não aparecer no aplicativo?</label>
-                <div class="resposta">
+                <label for="decimo-dois" aria-controls="resposta12" aria-expanded="false">E se a consulta não aparecer no aplicativo?</label>
+                <div class="resposta" id="resposta12">
                     <p>Às vezes, a consulta pode estar oculta. No app, toque no menu ☰ e escolha “Teleconsulta”. Se mesmo assim não aparecer, procure nosso suporte com seu nome e CPF.</p>
                 </div>
             </li>
