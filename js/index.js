@@ -13,7 +13,7 @@
 
 let btnMenu = document.getElementById('btn-menu')
 let menuMobile = document.getElementById('menu-mobile')
-let overlay =document.getElementById('overlay-menu"')
+let overlay = document.getElementById('overlay-menu')
 
 btnMenu.addEventListener('click', ()=>{
     menuMobile.classList.add('abir-menu')

@@ -123,6 +123,17 @@ header  #logo_hc {
     color: #E44D1F;
 }
 
+.overlay-menu{
+    background-color: #0000009c;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: none;
+}
+
 .header-content .input-wrapper{
     display: flex;
     align-items: center;
