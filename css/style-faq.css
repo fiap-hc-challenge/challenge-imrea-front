@@ -153,3 +153,18 @@
     color: #fff;
     border-radius: 0 0 10px 10px;
 }
+
+
+/*------------------ media querie 768px ---------------------*/
+
+@media (min-width: 768px){
+    .banner{
+        padding-top: 100px;
+    }
+
+    .container-categorias button{
+        font-size: 1.6rem;
+        padding: 8px 12px;
+    }
+
+}
