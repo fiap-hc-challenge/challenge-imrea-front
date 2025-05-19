@@ -12,3 +12,25 @@
     font-weight: 600;
     text-align: center;
 }
+
+
+/*----------------- seção categorias ------------------------*/
+.container-categorias{
+    margin: 16px 0;
+    text-align: center;
+}
+
+.container-categorias h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.container-categorias button{
+    background-color: #fff;
+    padding: 4px;
+    border: 1px solid #D34074;
+    border-radius: 8px;
+    margin: 2px;
+    font-size: 1.4rem;
+}
