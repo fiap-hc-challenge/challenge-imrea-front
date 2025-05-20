@@ -93,7 +93,11 @@
     margin: 0 auto;
 }
 
-.container-faq h3{
+.container-faq fieldset{
+    border: none;
+}
+
+.container-faq legend{
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 10px;
