@@ -20,6 +20,7 @@
 .container-principal{
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
 }
 
 .container-principal .contato{
@@ -106,14 +107,14 @@
     border: 1px solid #979797;
     border-radius: 8px;
     max-width: 400px;
-    margin: 20px;
+    width: 80vw;
+    margin: 24px 0;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .container-principal form fieldset{
     border: none;
     padding: 20px;
-   
 }
 
 .container-principal form fieldset legend{
