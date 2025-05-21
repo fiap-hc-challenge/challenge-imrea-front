@@ -12,3 +12,89 @@
     font-weight: 600;
     text-align: center;
 }
+
+
+
+/*----------------- seção contacts ------------------------*/
+
+.container-principal{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.container-principal .contato{
+    margin: 15px;
+    text-align: center;
+}
+
+.container-principal .contato .contact-topo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 12px;
+    gap: 16px;
+    
+}
+
+.container-principal .contato .contact-topo h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.container-principal .contato .contact-topo p{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.container-principal .contato .contact-topo .contact-tel{
+    color: #fff;
+    background-color: #E44D1F;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-principal .contato .contact-topo .contact-email{
+    color: #E44D1F;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #979797;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.container-principal .contato .contact-endereco{
+    color: #fff;
+    background-color: #E44D1F;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    max-width: 300px;
+    margin: 0 auto;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container-principal .contato .contact-endereco h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.container-principal .contato .contact-endereco p{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.container-principal .contato iframe{
+    margin: 20px;
+}
