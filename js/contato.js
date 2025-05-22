@@ -6,5 +6,10 @@ const iptMensagem = document.querySelector('#mensagem');
 
 
 btnSubmeterFormulario.addEventListener('submit', (event) => {
-
+    const dadosFormulario = {
+        'nome' : iptNome.value,
+        'email' : iptEmail.value,
+        'telefone' : iptTel.value,
+        'mensagem' : iptMensagem.value
+    }
 })
