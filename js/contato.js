@@ -1,7 +1,10 @@
-const telContainer = document.querySelector('.contact-tel');
-const emailContainer = document.querySelector('.contact-email');
-const enderecoContainer = document.querySelector('.contact-endereco');
+const btnSubmeterFormulario = document.querySelector('#btnEnviar');
+const iptNome = document.querySelector('#idNome');
+const iptEmail = document.querySelector('#idEmail');
+const iptTel = document.querySelector('#idTel');
+const iptMensagem = document.querySelector('#mensagem');
 
-telContainer.addEventListener('click', () => {
-    console.log("Clicked!");
+
+btnSubmeterFormulario.addEventListener('submit', (event) => {
+
 })
