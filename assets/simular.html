@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-tutorial.css">
+    <script src="../js/index.js" defer></script>
+    <script src="../js/tutorial.js" defer></script>
+
+    <!-- Ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Ícones do Google Material -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Simular Teleconsulta</title>
+</head>
+<body>
+    <header>
+        <!-- Redes sociais no topo -->
+        <div class="topo">
+            <ul class="box-redes-sociais" aria-label="Redes sociais">
+                <li class="facebook">
+                    <a href="https://web.facebook.com/redelucymontoro" target="_blank"
+                        aria-label="Ir para o Facebook do IMREA"><i class="fab fa-facebook-f icon"></i></a>
+                </li>
+                <li class="instagram">
+                    <a href="https://www.instagram.com/redelucymontoro/" target="_blank"
+                        aria-label="Ir para o Instagram do IMREA"><i class="fab fa-instagram icon"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Cabeçalho principal -->
+        <div class="header-content">
+            <!-- Logos -->
+            <div class="img-logo">
+                <img id="logo_imrea" src="../img/logo_imrea.svg"
+                    alt="Logo do IMREA - Instituto de Medicina Física e Reabilitação" title="Logo do IMREA">
+                <img id="logo_hc" src="../img/logo_hc.svg"
+                    alt="Logo do Hospital das Clínicas da Faculdade de Medicina da USP" title="Logo do HC">
+            </div>
+
+            <!-- Menu de navegação desktop -->
+            <nav class="menu" id="inicio" aria-label="Menu principal">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./sobre.html">Sobre nós</a></li>
+                    <li><a href="./faq.html">FAQs</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="#">Tutorial</a></li>
+                    <li><a href="./simular.html">Simular Teleconsulta</a></li>
+                </ul>
+            </nav>
+
+            <!-- Barra de pesquisa com ícone -->
+            <div class="container-search">
+                <div class="input-wrapper">
+                    <input type="text" class="search" placeholder="Pesquisar" id="search"
+                        aria-label="Campo de pesquisa">
+                    <img src="../img/Search.svg" alt="Ícone de busca">
+                </div>
+            </div>
+
+            <!-- Botão de abrir menu mobile -->
+            <div class="btn-abrir-menu" id="btn-menu">
+                <span class="material-symbols-outlined icon" aria-label="Abrir menu">menu</span>
+            </div>
+
+            <!-- Menu mobile -->
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <span class="material-symbols-outlined icon" aria-label="Fechar menu">close</span>
+                </div>
+                <nav aria-label="Menu mobile">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./sobre.html">Sobre nós</a></li>
+                        <li><a href="./faq.html">FAQs</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                        <li><a href="#">Tutorial</a></li>
+                        <li><a href="./simular.html">Simular Teleconsulta</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
+    </header>
+</body>
+</html>
