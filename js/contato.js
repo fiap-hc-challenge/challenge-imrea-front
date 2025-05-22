@@ -18,4 +18,5 @@ formulario.addEventListener('submit', (event) => {
 
     console.log(dadosFormulario);
     mensagens.push(dadosFormulario);
+    localStorage.setItem('mensagens', JSON.stringify(mensagens));
 })
