@@ -90,42 +90,46 @@
             <div class="overlay-menu" id="overlay-menu"></div>
     </header>
 
+    <!-- Conteúdo principal -->
     <main>
         <h1>Tutorial interativo, onde você pode participar passo a passo de como acessar o aplicativo de teleconsulta do
             HC.</h1>
-
+        
         <section class="container-passo">
-            <div id="passo1" class="passo ativo">
+            <!-- Passo 1 -->
+            <div id="passo1" class="passo ativo" role="group" aria-labelledby="titulo-passo1" aria-describedby="desc-passo1">
                 <div class="text-passo">
                     <h2>Passo 1: Baixe o aplicativo</h2>
                     <p>Vá até a loja do seu celular (Play Store ou App Store) e procure por "Portal do Paciente HC".</p>
                 </div>
-                <button class="pulsante" onclick="mostrarPasso(2)">Clique para o próximo passo</button>
+                <button class="pulsante" onclick="mostrarPasso(2)" aria-label="Ir para o Passo 2">Clique para o próximo passo</button>
                 <img src="../img/passo1.png" alt="Loja de aplicativos mostrando o app Portal do Paciente HC">
             </div>
 
-            <div id="passo2" class="passo">
+            <!-- Passo 2 -->
+            <div id="passo2" class="passo" role="group" aria-labelledby="titulo-passo2" aria-describedby="desc-passo2">
                 <div class="text-passo">
                     <h2>Passo 2: Tela inicial</h2>
                     <p>Após abrir a tela do aplicativo, clique em “Acessar Portal”. Para fazer o Cadastro.</p>
                 </div>
                 <div class="button-passo">
-                    <button onclick="mostrarPasso  (1)">Voltar</button>
-                    <button class="pulsante" onclick="mostrarPasso  (3)">Próximo</button>
+                    <button onclick="mostrarPasso(1)" aria-label="Voltar para o Passo 1">Voltar</button>
+                    <button class="pulsante" onclick="mostrarPasso(3)" aria-label="Ir para o Passo 3">Próximo</button>
                     </div>
                 <img src="../img/passo2.png" alt="">
             </div>
 
-            <div id="passo3" class="passo">
+            <!-- Passo 3 -->
+            <div id="passo3" class="passo" role="group" aria-labelledby="titulo-passo3" aria-describedby="desc-passo3">
                 <div class="text-passo">
                     <h2>Passo 3: Cadastre-se</h2>
                     <p>Se for sua primeira vez acessando o aplicativo, clique em “Cadastrar Senha”.</p>
                 </div>
                 <div class="button-passo">
-                    <button onclick="mostrarPasso  (2)">Voltar</button>
-                    <button class="pulsante" onclick="mostrarPasso  (4)">Próximo</button>
+                    <button onclick="mostrarPasso(2)" aria-label="Voltar para o Passo 2">Voltar</button>
+                    <button class="pulsante" onclick="mostrarPasso(4)" aria-label="Ir para o Passo 4">Próximo</button>
                     </div>
-                <img src="../img/passo3.png" alt="">
+                <img src="../img/passo3.png" alt="Tela do aplicativo mostrando a opção de cadastrar senha">
             </div>
         </section>
     </main>
