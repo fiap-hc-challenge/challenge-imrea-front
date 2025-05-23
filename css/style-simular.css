@@ -99,8 +99,8 @@ a.pulsante {
     }
 
     50% {
-        transform: scale(1.05);
-        box-shadow: 0 0 15px rgba(228, 77, 31, 0.6);
+        transform: scale(1.01);
+        box-shadow: 0 0 10px rgba(228, 77, 31, 0.6);
     }
 
     100% {
