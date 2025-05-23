@@ -1,0 +1,23 @@
+/*------------------------ text ---------------------*/
+.text-topo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 24px;
+}
+
+.text-topo h1{
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 96px 0 0;
+}
+
+.text-topo p{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
