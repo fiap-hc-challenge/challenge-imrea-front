@@ -104,3 +104,12 @@ a.pulsante {
     width: 100px;
 }
 
+
+
+/*------------------------ medie querie 768px ---------------------*/
+@media (min-width: 768px) {
+    .text-topo{
+        padding: 130px 0 0;
+    }
+}
+
