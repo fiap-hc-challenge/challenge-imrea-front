@@ -5,7 +5,7 @@ const iptTel = document.querySelector('#idTel');
 const iptMensagem = document.querySelector('#mensagem');
 
 
-const mensagens = [];
+const mensagensSalvas = JSON.parse(localStorage.getItem('mensagens')) || [];
 
 formulario.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -17,6 +17,6 @@ formulario.addEventListener('submit', (event) => {
     }
 
     console.log(dadosFormulario);
-    mensagens.push(dadosFormulario);
-    localStorage.setItem('mensagens', JSON.stringify(mensagens));
+    mensagensSalvas.push(dadosFormulario);
+    localStorage.setItem('mensagens', JSON.stringify(mensagensSalvas));
 })
