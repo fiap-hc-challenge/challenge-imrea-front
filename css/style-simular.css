@@ -71,6 +71,15 @@
     text-align: center;
 }
 
+.container-passo .info-passo a:hover {
+    background-color: #e44d1fd0;
+}
+
+.container-passo .info-passo a:focus {
+    outline: 2.5px solid #000;
+    background-color: #e44d1fd0;
+}
+
 a.pulsante {
     transition: all 0.3s ease-in-out;
     border: none;
@@ -130,6 +139,15 @@ a.pulsante {
     font-size: 1.6rem;
     cursor: pointer;
     text-decoration: none;
+}
+
+.container-ajuda a:hover {
+    background-color: #e44d1fd0;
+}
+
+.container-ajuda a:focus {
+    outline: 2.5px solid #000;
+    background-color: #e44d1fd0;
 }
 
 
