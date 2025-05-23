@@ -170,6 +170,26 @@
     font-size: 1.6rem;
 }
 
+/*-------------------- aviso flutuante ------------------------*/
+#mensagem-flutuante{
+    color: #fff;
+    border: none;
+    font-size: 1.6rem;
+    border-radius: 16px;
+    padding: 8px;
+    background-color: #E44D1F;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+#mensagem-flutuante.mostrar{
+    opacity: 1;
+}
+
 /*----------------- medie querie 768px ------------------------*/
 
 @media (min-width: 768px){
