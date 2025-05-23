@@ -25,3 +25,78 @@
 
 /*------------------------ passos ---------------------*/
 
+.container-passo{
+    margin: 20px 24px;
+}
+
+.container-passo .passo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid #727272;
+    border-radius: 24px;
+    padding: 20px;
+    max-width: 520px;
+    gap: 40px;
+}
+
+.container-passo .info-passo{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 300px;
+}
+
+.container-passo .info-passo h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.container-passo .info-passo p{
+    font-size: 1.6rem;
+}
+
+.container-passo .info-passo button{
+    background-color: #E44D1F;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 16px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+button.pulsante {
+    transition: all 0.3s ease-in-out;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+button.pulsante {
+    animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(228, 77, 31, 0.4);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(228, 77, 31, 0.6);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(228, 77, 31, 0.4);
+    }
+}
+
+.container-passo img{
+    width: 100px;
+}
