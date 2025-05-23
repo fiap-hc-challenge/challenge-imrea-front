@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 24px;
+    padding: 96px 0 0;
 }
 
 .text-topo h1{
@@ -11,14 +12,14 @@
     font-weight: 600;
     text-align: center;
     margin-bottom: 16px;
-    padding: 96px 0 0;
+    
 }
 
 .text-topo p{
     font-size: 1.6rem;
     text-align: center;
     margin-bottom: 16px;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -58,7 +59,7 @@
     font-size: 1.6rem;
 }
 
-.container-passo .info-passo button{
+.container-passo .info-passo a{
     background-color: #E44D1F;
     color: #fff;
     padding: 8px;
@@ -66,9 +67,11 @@
     border-radius: 16px;
     font-size: 1.6rem;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
 }
 
-button.pulsante {
+a.pulsante {
     transition: all 0.3s ease-in-out;
     border: none;
     outline: none;
@@ -76,7 +79,7 @@ button.pulsante {
 }
 
 
-button.pulsante {
+a.pulsante {
     animation: pulse 1.2s infinite;
 }
 
@@ -100,3 +103,4 @@ button.pulsante {
 .container-passo img{
     width: 100px;
 }
+
