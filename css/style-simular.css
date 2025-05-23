@@ -104,6 +104,34 @@ a.pulsante {
     width: 100px;
 }
 
+.container-ajuda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 72px 24px;
+    text-align: center;
+}
+
+.container-ajuda h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.container-ajuda a{
+    background-color: #E44D1F;
+    color: #fff;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 
 
 /*------------------------ medie querie 768px ---------------------*/
