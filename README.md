@@ -1,4 +1,4 @@
-# 🏥 Projeto IMREA – Portal de Apoio à Teleconsulta
+# Projeto IMREA – Portal de Apoio à Teleconsulta
 
 [🔗 Acesse o site aqui](https://fiap-hc-challenge.github.io/challenge-imrea-front/)
 
@@ -76,5 +76,5 @@ Nosso foco foi **entregar uma solução simples, funcional e que de fato auxilie
 
 ## Repositório no GitHub
 
-🔗 [https://github.com/fiap-hc-challenge/challenge-imrea-front](https://github.com/fiap-hc-challenge/challenge-imrea-front)
+🔗 [https://github.com/fiap-hc-challenge/challenge-imrea-front.git](https://github.com/fiap-hc-challenge/challenge-imrea-front.git)
 
