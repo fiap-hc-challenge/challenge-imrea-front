@@ -171,24 +171,41 @@
 }
 
 /*-------------------- aviso flutuante ------------------------*/
-#mensagem-flutuante{
+#mensagem-flutuante {
     color: #fff;
-    border: none;
-    font-size: 1.6rem;
-    border-radius: 16px;
-    padding: 8px;
     background-color: #E44D1F;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 12px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 20px;
-    right: 20px;
+    left:50%;
+    transform: translateX(-50%);
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
     z-index: 1000;
+    pointer-events: none; 
 }
 
-#mensagem-flutuante.mostrar{
+#mensagem-flutuante.mostrar {
     opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }
+
+
+
+
+/*----------------- mensagem de erro ------------------------*/
+
+.erro {
+    font-size: 1.2rem;
+    display: block;
+    color: red;
+}
+
+
 
 /*----------------- medie querie 768px ------------------------*/
 
@@ -211,7 +228,7 @@
     .container-principal form{
         width: 40%;
         margin: 24px;
-        height: 540px;
+        height: auto;
     }
 
     .container-principal form fieldset{
