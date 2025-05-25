@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +20,7 @@
 
     <title>Tutorial</title>
 </head>
+
 <body>
     <header>
         <!-- Redes sociais no topo -->
@@ -94,15 +96,17 @@
     <main>
         <h1>Tutorial interativo, onde você pode participar passo a passo de como acessar o aplicativo de teleconsulta do
             HC.</h1>
-        
+
         <section class="container-passo">
             <!-- Passo 1 -->
-            <div id="passo1" class="passo ativo" role="group" aria-labelledby="titulo-passo1" aria-describedby="desc-passo1">
+            <div id="passo1" class="passo ativo" role="group" aria-labelledby="titulo-passo1"
+                aria-describedby="desc-passo1">
                 <div class="text-passo">
                     <h2>Passo 1: Baixe o aplicativo</h2>
                     <p>Vá até a loja do seu celular (Play Store ou App Store) e procure por "Portal do Paciente HC".</p>
                 </div>
-                <button class="pulsante" onclick="mostrarPasso(2)" aria-label="Ir para o Passo 2">Clique para o próximo passo</button>
+                <button class="pulsante" onclick="mostrarPasso(2)" aria-label="Ir para o Passo 2">Clique para o próximo
+                    passo</button>
                 <img src="../img/passo1.png" alt="Loja de aplicativos mostrando o app Portal do Paciente HC">
             </div>
 
@@ -115,7 +119,7 @@
                 <div class="button-passo">
                     <button onclick="mostrarPasso(1)" aria-label="Voltar para o Passo 1">Voltar</button>
                     <button class="pulsante" onclick="mostrarPasso(3)" aria-label="Ir para o Passo 3">Próximo</button>
-                    </div>
+                </div>
                 <img src="../img/passo2.png" alt="">
             </div>
 
@@ -128,7 +132,7 @@
                 <div class="button-passo">
                     <button onclick="mostrarPasso(2)" aria-label="Voltar para o Passo 2">Voltar</button>
                     <button class="pulsante" onclick="mostrarPasso(4)" aria-label="Ir para o Passo 4">Próximo</button>
-                    </div>
+                </div>
                 <img src="../img/passo3.png" alt="Tela do aplicativo mostrando a opção de cadastrar senha">
             </div>
 
@@ -136,12 +140,13 @@
             <div id="passo4" class="passo" role="group" aria-labelledby="titulo-passo4" aria-describedby="desc-passo4">
                 <div class="text-passo">
                     <h2>Passo 4: Cadastro inicial</h2>
-                    <p>Na tela de cadastro, digite seu CPF (somente números) no campo indicado e toque em “Localizar Paciente”.</p>
+                    <p>Na tela de cadastro, digite seu CPF (somente números) no campo indicado e toque em “Localizar
+                        Paciente”.</p>
                 </div>
                 <div class="button-passo">
                     <button onclick="mostrarPasso(3)" aria-label="Voltar para o Passo 3">Voltar</button>
                     <button class="pulsante" onclick="mostrarPasso(5)" aria-label="Ir para o Passo 5">Próximo</button>
-                    </div>
+                </div>
                 <img src="../img/passo4.png" alt="Tela do aplicativo mostrando a opção de cadastrar senha">
             </div>
 
@@ -156,7 +161,7 @@
                 <div class="button-passo">
                     <button onclick="mostrarPasso(4)" aria-label="Voltar para o Passo 4">Voltar</button>
                     <button class="pulsante" onclick="mostrarPasso(6)" aria-label="Ir para o Passo 6">Próximo</button>
-                    </div>
+                </div>
                 <img src="../img/passo5.png" alt="Tela do aplicativo mostrando a opção de cadastrar senha">
             </div>
 
@@ -172,7 +177,7 @@
                 <div class="button-passo">
                     <button onclick="mostrarPasso(5)" aria-label="Voltar para o Passo 5">Voltar</button>
                     <button class="pulsante" onclick="mostrarPasso(7)" aria-label="Ir para o Passo 7">Próximo</button>
-                    </div>
+                </div>
                 <img src="../img/passo6.png" alt="Tela do aplicativo mostrando a opção de cadastrar senha">
             </div>
 
@@ -187,8 +192,56 @@
                 <div class="button-passo">
                     <button onclick="mostrarPasso(6)" aria-label="Voltar para o Passo 6">Voltar</button>
                     <button class="pulsante" onclick="mostrarPasso(8)" aria-label="Ir para o Passo 8">Próximo</button>
-                    </div>
+                </div>
                 <img src="../img/passo7.png" alt="Tela do aplicativo mostrando a opção de cadastrar senha">
+            </div>
+
+
+            <!-- Passo 8 -->
+            <div id="passo8" class="passo" role="group" aria-labelledby="titulo-passo8" aria-describedby="desc-passo8">
+                <div class="text-passo">
+                    <h2>Passo 8: Acesse a teleconsulta</h2>
+                    <p>Dentro do menu, toque na opção “Teleconsulta”.
+                        Ali você verá sua consulta marcada.
+
+                    </p>
+                </div>
+                <div class="button-passo">
+                    <button onclick="mostrarPasso(7)" aria-label="Voltar para o Passo 7">Voltar</button>
+                    <button class="pulsante" onclick="mostrarPasso(9)" aria-label="Ir para o Passo 9">Próximo</button>
+                </div>
+                <img src="../img/passo8.png" alt="Tela do aplicativo mostrando a opção de cadastrar senha">
+            </div>
+
+
+            <!-- Passo 9 -->
+            <div id="passo9" class="passo" role="group" aria-labelledby="titulo-passo9" aria-describedby="desc-passo9">
+                <div class="text-passo">
+                    <h2>Passo 9: Entrar na teleconsulta</h2>
+                    <p>Toque duas vezes na opção “Teleconsulta”.
+                        Depois, toque em “Entrar na Teleconsulta” para acessar a sala virtual.
+                    </p>
+                </div>
+                <div class="button-passo">
+                    <button onclick="mostrarPasso(8)" aria-label="Voltar para o Passo 8">Voltar</button>
+                    <button class="pulsante" onclick="mostrarPasso(10)" aria-label="Ir para o Passo 10">Próximo</button>
+                </div>
+                <img src="../img/passo9.png" alt="Tela do aplicativo mostrando a opção de cadastrar senha">
+            </div>
+
+
+            <!-- Passo 10 -->
+            <div id="passo10" class="passo" role="group" aria-labelledby="titulo-passo10" aria-describedby="desc-passo10">
+                <div class="text-passo">
+                    <h2>Passo 10: Aguardar o profissional</h2>
+                    <p>Agora é só aguardar o profissional de saúde entrar na sala.
+                        Você será atendido em breve, fique tranquilo e mantenha o aplicativo aberto.
+                    </p>
+                </div>
+                <div class="button-passo">
+                    <button class="pulsante" onclick="mostrarPasso(1)" aria-label="Ir para o Passo 1">Refazer</button>
+                </div>
+                <img src="../img/passo10.png" alt="Tela do aplicativo mostrando a opção de cadastrar senha">
             </div>
         </section>
     </main>
@@ -222,4 +275,5 @@
         </ul>
     </footer>
 </body>
+
 </html>
